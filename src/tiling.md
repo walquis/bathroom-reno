@@ -33,9 +33,19 @@ So many tiles...
 <img width="30%" src="images/IMG_4445.jpg" alt="4 May 2022">
 
 ### Laying Wall Tile - 30 April to 31 May
-<img width="30%" src="images/IMG_4434.jpg" alt="30 Apr 2022">
-<img width="30%" src="images/IMG_4435.jpg" alt="30 Apr 2022">
+
+One tricky bit about the walls was positioning the tile seams such that there were no awkward intersections with fixtures, floors, or corners.  I didn't want to deal with cutting and placing slivers of tile, and it wouldn't look good or last well.
+
+Also, I needed to keep everything aligned all the way around the shower.
+
+<img width="30%" src="images/IMG_4434.jpg" >
+<img width="30%" src="images/IMG_4435.jpg" >
 <img width="30%" src="images/IMG_4444.jpg" >
+
+I started from the middle of the bench, so that it would align with the floor seams.  On the opposite wall, I started so that the steam vent, the cubby, the floor, and the corner would come out right.
+
+Now I needed to make everything come together.  As I went, I realized I had a 3/16" height discrepancy that would have to be resolved before the courses met.  This was due to my uncertainty about exactly how the seam width would work out.
+
 <img width="30%" src="images/IMG_4453.jpg" >
 <img width="30%" src="images/IMG_4454.jpg" >
 <img width="30%" src="images/IMG_4455.jpg" >
