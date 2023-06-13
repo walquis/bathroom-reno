@@ -9,4 +9,4 @@ title = "Bathroom Reno"
 default-theme = "rust"
 
 [build]
-#build-dir = "docs"
+build-dir = "../docs"

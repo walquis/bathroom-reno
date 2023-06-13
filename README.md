@@ -1,47 +1,26 @@
-# A "Github Pages" site of URL Shortener curriculum
-That is, a static site that Github assembles and publishes with the Jekyll static site generator.  Jekyll understands Markdown, and uses the "Liquid" templating engine under the hood.
+# Bathroom Renovation Project
 
-For more on Markdown, see the [Github Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Installing mdBook for building/running
 
-On git.drwholdings.com, this repo's settings are configured to publish content under `<repo-root>/docs`, to https://git.drwholdings.com/pages/apprenticeship/url_shortener.
+https://rust-lang.github.io/mdBook/guide/installation.html
 
-## Running Jekyll for local previewing
-
-### Install Ruby
-On Mac, 'brew install ruby'.
-
-On Windows, download a ruby from https://rubyinstaller.org/downloads/.  As of this writing, 2.7.-something (x64) with devkit is a decent choice.
-
-You will need to get the path to Ruby into your PATH variable.  From a Windows git bash prompt, you might run something like this, assuming you've put Ruby in `Ruby2.7.6` under your `C:\Users\<login>` directory...
+## Serving the book locally
+Use this when authoring.
 ```
-$ export PATH=/c/Users/cwalquist/Ruby2.7.6/bin:$PATH
-```
-On Mac, it's a similar procedure: Find the path, down to the `bin` level, and prepend it to the PATH variable.
-
-### Install the Jekyll gem
-Assumption: You have Ruby in your path, and the Bundler gem installed.
-
-```bash
-$ cd docs
-$ bundle config set --global path vendor/bundle  # Where gemsets should go
-$ bundle install --path=vendor/bundle  # Uses Gemfile and Gemfile.lock to know what to install
+$ mdbook serve  # builds, watches for changes, refreshes local browser on change.
 ```
 
-### Start Jekyll
+## Building and publishing the book
+The .github/workflows/publish-mdbook.yml fires a github action that does the honors upon commit to `main`.
+
 ```
-$ bundle exec jekyll serve --livereload --open-url
+# Assuming your source code changes have already been added/committed...
+$ cd thebook
+$ mdbook build
+$ cd ..
+$ git add docs
+$ git commit -m "mdbook build"
+$ git push
 ```
-At this point, Jekyll should open a preview window at http://127.0.0.1:4000 in your browser.
 
-### Optional: Grip for single-page rendering
-Mac Users: You can also use grip to render single .md pages:
-```bash
-$ brew install grip
-$ grip README.md
-```
-Windows users can use grip too, but it takes setting up a Python environment:
-
-## Developer notes
-- Jekyll needs a _config.yml in this "docs" sub-directory in order to be happy running here.
-
-
+The markdown source code lives in the `thebook/src` directory, which looks like a working website if you click around in it, but you'll notice that some links may not work, there is no table of contents, etc.  When mdBook-built changes in `docs/` are pushed, Github sees them and publishes them properly [here](https://walquis.github.io/git-basics-team-project).  See [Github Pages](https://pages.github.com) if curious how to publish pages from your repos (mdBook is only one of many ways to do this).
