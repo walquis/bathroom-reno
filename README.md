@@ -1,6 +1,6 @@
 # My DIY Bathroom Renovation Project
 
-See mdBook on [Github Pages](https://walquis.github.io/bathroom-reno/}
+See mdBook on [Github Pages](https://walquis.github.io/bathroom-reno/).
 
 ![](thebook/src/images/IMG_4740.jpg)
 
