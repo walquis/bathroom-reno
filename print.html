@@ -1,0 +1,551 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Bathroom Reno</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="inspiration.html"><strong aria-hidden="true">2.</strong> Inspiration</a></li><li class="chapter-item expanded "><a href="water-heater.html"><strong aria-hidden="true">3.</strong> Dedicated Water Heater</a></li><li class="chapter-item expanded "><a href="design.html"><strong aria-hidden="true">4.</strong> Design Drivers for Remodeling</a></li><li class="chapter-item expanded "><a href="before.html"><strong aria-hidden="true">5.</strong> "Before"</a></li><li class="chapter-item expanded "><a href="demolition.html"><strong aria-hidden="true">6.</strong> Demolition</a></li><li class="chapter-item expanded "><a href="heated-floor.html"><strong aria-hidden="true">7.</strong> Heated Floor</a></li><li class="chapter-item expanded "><a href="ceiling-and-light.html"><strong aria-hidden="true">8.</strong> Ceiling and Light</a></li><li class="chapter-item expanded "><a href="walls-and-insulation.html"><strong aria-hidden="true">9.</strong> Walls and Insulation</a></li><li class="chapter-item expanded "><a href="bench.html"><strong aria-hidden="true">10.</strong> Shower Bench</a></li><li class="chapter-item expanded "><a href="drain.html"><strong aria-hidden="true">11.</strong> Shower Drain</a></li><li class="chapter-item expanded "><a href="sink.html"><strong aria-hidden="true">12.</strong> Sink</a></li><li class="chapter-item expanded "><a href="shower-valve-plumbing.html"><strong aria-hidden="true">13.</strong> Shower Valve Plumbing</a></li><li class="chapter-item expanded "><a href="window.html"><strong aria-hidden="true">14.</strong> New Window</a></li><li class="chapter-item expanded "><a href="cubbyhole.html"><strong aria-hidden="true">15.</strong> Shower Cubbyhole</a></li><li class="chapter-item expanded "><a href="mudding.html"><strong aria-hidden="true">16.</strong> Mudding</a></li><li class="chapter-item expanded "><a href="waterproofing.html"><strong aria-hidden="true">17.</strong> Waterproofing</a></li><li class="chapter-item expanded "><a href="tiling.html"><strong aria-hidden="true">18.</strong> Tiling</a></li><li class="chapter-item expanded "><a href="grouting.html"><strong aria-hidden="true">19.</strong> Grouting</a></li><li class="chapter-item expanded "><a href="painting.html"><strong aria-hidden="true">20.</strong> Painting</a></li><li class="chapter-item expanded "><a href="wood-trim.html"><strong aria-hidden="true">21.</strong> Wood Trim</a></li><li class="chapter-item expanded "><a href="wrap-up.html"><strong aria-hidden="true">22.</strong> Wrap-Up</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Bathroom Reno</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="my-diy-bathroom-renovation"><a class="header" href="#my-diy-bathroom-renovation">My DIY Bathroom Renovation</a></h1>
+<p><img src="images/IMG_4740.jpg" alt="" /></p>
+<!--more-->
+<div style="break-before: page; page-break-before: always;"></div><h1 id="inspiration"><a class="header" href="#inspiration">Inspiration</a></h1>
+<ul>
+<li>Aunt came to stay during reunion, broke the arm off the rain-head showerhead</li>
+<li>demo'd Mom's shower, gained confidence that I could do same</li>
+<li>Mom had a walk-in shower put in. a) looked pretty good, and b) pretty sure I could do better
+<ul>
+<li>I did not realize how long it would take</li>
+</ul>
+</li>
+</ul>
+<p><img src="images/2021-09-15-moms-bathroom-demo-IMG_3025.jpg" alt="" title="Sep 15, 2021" /></p>
+<p>Megan hosted us in 2021, and I was impressed with the bathroom they did, especially the textured light tile that they used. I liked the bench, the wide grout spacing, and the large tiles.
+<img src="images/IMG_5343.jpg" alt="" title="Fall 2021" /></p>
+<p>This eventually led me to choose the Roman travertine-style &quot;Travisano Trevi&quot; tile at Home Depot, and guided me to more vaguely Roman style choices expressing a simple, uncluttered, calm theme.
+<img src="images/JDQV1899.jpg" alt="" title="Fall 2021" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dedicated-water-heater"><a class="header" href="#dedicated-water-heater">Dedicated Water Heater</a></h1>
+<p>As the first step in upgrading the bathroom, I put a dedicated 20-gallon water heater in the crawl space just below.</p>
+<p><img src="images/IMG_3094.jpg" alt="" title="9 Oct 2021" /></p>
+<style>
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<div class="clearfix">
+<img src="images/IMG_3095.jpg" alt="10 Oct 2021" width="50%" style="float:right">
+In the course of installing the water heater itself, I refactored a lot of hot water piping. I was able to remove a 3/4" hot water line that ran all the way across the house.  That line had been added when the attached garage at the end of the house was converted to a master bedroom and bathroom.
+<p>It took a looong time to get hot water to the bathroom, and wasted lots of hot water in the process.</p>
+<p>I also removed a bunch of unused pipe that had been left in place from previous projects. --&gt;</p>
+</div>
+<p>It was an interesting exercise re-attaching not only the dishwasher line but also the humidifier tap (I didn't realize at first that the humidier was being fed <em>hot</em> water, but it makes sense; hot water evaporates more quickly).  I discovered the SharkBite fittings, which are expensive but awesome, especially where (a) you can't easily sweat a copper joint without setting something on fire, or (b) you might need to disconnect the pipe later for whatever reason.  In the latter case, the SharkBite fitting on the water heater's hot water line came in handy when I discovered the humidifier requirement; I popped off the fitting, added a tee, and popped it back onto the bottom of the tee:</p>
+<p><img src="images/2021-10-09-water-heater-install-hookup-IMG_3093.JPG" alt="" /></p>
+<p>Feeding the humidifier from a nearby water heater saves energy; the humidifier is more effective since it's getting hotter water.  Water trickles into the humidifier, and by the time it reached the humidifier from the far-off main water heater, it was merely warm.</p>
+<style>
+.img-row {
+  display: flex;
+  justify-content: space-around;
+}
+</style>
+<p>As part of running power to the water heater, I also fixed an ancient wiring mess providing power to the oven.</p>
+<div class="img-row"> 
+  <div>
+    <div>From this (note the extension cord 😮)... </div>
+    <img width="80%" src="images/2021-10-08-water-heater-install-wiring-before-IMG_3089.jpg" alt="8 Oct 2021">
+  </div>
+  <div>
+    <div> ...to this: </div>
+    <img width="80%" src="images/2021-10-09-water-heater-install-wiring-after-IMG_3091.jpg"  alt="9 Oct 2021">
+  </div>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="design-drivers-for-remodeling"><a class="header" href="#design-drivers-for-remodeling">Design Drivers for Remodeling</a></h1>
+<ul>
+<li><strong>Utility</strong>. We don't use the jacuzzi any more.  The old shower was a pain to keep clean.  The glass doors needed frequent washing. The caulk around the tub would mildew and need replacing periodically--an arduous, time-consuming and messy job.  The openings in the unused jacuzzi accumulated black mold.</li>
+<li><strong>Safety</strong>.  It was significantly dangerous to get in and out of the jacuzzi tub, the inside being slippery and slanted.  In addition, the glass door track was sharp, and painful to misstep on.</li>
+<li><strong>Aesthetics and Use of Space</strong> - The jacuzzi tub took up a lot of room.  The ceiling box above the tub was there to keep in steam, but made the room feel small.</li>
+</ul>
+<p>Design Elements and Features</p>
+<ul>
+<li>Roman travertine tile design (inspired by Megan's walk-in shower) - Travisano Trevi by Marazzi.</li>
+<li>Heated tile floor - Uncle Bob built a heated floor into his basement, it's so nice!</li>
+<li>Water conservation - I love the flow control and temperature control on the Delta shower trim.</li>
+<li>The hand shower is usable as a bidet.</li>
+<li>Wheelchair accessible - The entrance is 30 inches wide, and has no threshold.</li>
+<li>Corner bench in the shower.</li>
+<li>A calming, uncluttered space.</li>
+<li>No threshold into the shower - Avoids something else to trip over or collect dirt.</li>
+<li>New Window - the old window was single-pane, drafty, with a broken lock, and didn't stay up on its own.</li>
+<li>Vent aperture at the top - Grace requested it.</li>
+<li>A light in the shower.</li>
+<li>A big sink with plenty of depth.</li>
+</ul>
+<p>Challenges</p>
+<ul>
+<li>Getting the shower drain right.  A lot of engineering goes into it!</li>
+<li>Anchoring the shower wall (since it didn't sit directly under a rafter).</li>
+<li>Embedding the heating elements in the floor.</li>
+<li>Learning to replace a window.</li>
+<li>Learning to tile.</li>
+<li>Grouting.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="before"><a class="header" href="#before">&quot;Before&quot;</a></h1>
+<p><img src="images/IMG_3836.jpg" alt="" title="Jan 9" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="demolition"><a class="header" href="#demolition">Demolition</a></h1>
+<p>While Grace was out of town...</p>
+<p><img src="images/IMG_3844.jpg" alt="" title="Jan 9" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="heated-floor"><a class="header" href="#heated-floor">Heated Floor</a></h1>
+<img width="49%" src="images/IMG_3877.jpg">
+<img width="49%" src="images/IMG_3878.jpg">
+<img width="49%" src="images/IMG_3879.jpg">
+<img width="49%" src="images/IMG_3880.jpg">
+<img width="49%" src="images/IMG_3881.jpg">
+<img width="49%" src="images/IMG_3882.jpg">
+<img width="49%" src="images/IMG_3884.jpg">
+<img width="49%" src="images/IMG_3887.jpg">
+<img width="49%" src="images/IMG_3888.jpg">
+<img width="49%" src="images/IMG_3890.jpg">
+<img width="49%" src="images/IMG_3891.jpg">
+<img width="49%" src="images/IMG_3892.jpg">
+<img width="49%" src="images/IMG_3890.jpg">
+<img width="49%" src="images/IMG_4073.jpg">
+<img width="49%" src="images/IMG_4074.jpg">
+<img width="49%" src="images/IMG_4165.jpg">
+<img width="49%" src="images/IMG_4166.jpg">
+<img width="49%" src="images/IMG_4168.jpg">
+<img width="49%" src="images/IMG_4189.jpg">
+<img width="49%" src="images/IMG_4191.jpg">
+<img width="49%" src="images/IMG_4193.jpg">
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ceiling-and-light"><a class="header" href="#ceiling-and-light">Ceiling and Light</a></h1>
+<img width="49%" src="images/IMG_3905.jpg">
+<img width="49%" src="images/IMG_3906.jpg">
+<img width="49%" src="images/IMG_3907.jpg">
+<img width="49%" src="images/IMG_3908.jpg">
+<img width="49%" src="images/IMG_3909.jpg">
+<img width="49%" src="images/IMG_3910.jpg">
+<img width="49%" src="images/IMG_3914.jpg">
+<img width="49%" src="images/IMG_3915.jpg">
+<img width="49%" src="images/IMG_3930.jpg">
+<img width="49%" src="images/IMG_3931.jpg">
+<img width="49%" src="images/IMG_3932.jpg">
+<img width="49%" src="images/IMG_3933.jpg">
+<img width="49%" src="images/IMG_4035.jpg">
+<div style="break-before: page; page-break-before: always;"></div><h1 id="walls-and-insulation"><a class="header" href="#walls-and-insulation">Walls and Insulation</a></h1>
+<p>As I went along, it became clear that much of the insulation would need replacing.</p>
+<p>I initially brought home some MoldTough green drywall, but then discovered that it isn't rated for showers.  So I took back the 5 4x8 sheets, and went with 0.42&quot; &quot;HardieBoard&quot; cement backer board, which comes in 3x5' (due to its weight, no doubt).</p>
+<img width="32%" src="images/IMG_3916.jpg">
+<img width="32%" src="images/IMG_3917.jpg">
+<img width="32%" src="images/IMG_4023.jpg">
+<p>Insulation started going in on 19 Jan.</p>
+<p>Wallboard started a month later, 20 Feb.  I needed to do the plumbing and wiring, and have the rough inspection done first.</p>
+<video width="32%" controls>
+  <source src="images/IMG_4003-480p.mov">
+</video>
+<p>Pre-inspection movie for Rick's plumber friend</p>
+<img width="32%" src="images/IMG_4024.jpg">
+<img width="32%" src="images/IMG_4025.jpg">
+<img width="32%" src="images/IMG_4027.jpg">
+<img width="32%" src="images/IMG_4028.jpg">
+<img width="32%" src="images/IMG_4029.jpg">
+<img width="32%" src="images/IMG_4030.jpg">
+<p>I sistered a 2x6 along a rafter, in order to anchor the top of the wall where I wanted it to go.</p>
+<img width="32%" src="images/IMG_4031.jpg">
+<img width="32%" src="images/IMG_4032.jpg">
+<img width="32%" src="images/IMG_4207.jpg">
+<p>The height difference between the shower ceiling and the rest of the bathroom was an issue.  I resolved it by adding a 2x2 after putting up the rest of the backer board.</p>
+<img width="32%" src="images/IMG_4033.jpg">
+<img width="32%" src="images/IMG_4034.jpg">
+<img width="32%" src="images/IMG_4035.jpg">
+<img width="32%" src="images/IMG_4036.jpg">
+<img width="32%" src="images/IMG_4041.jpg">
+<img width="32%" src="images/IMG_4045.jpg">
+<img width="32%" src="images/IMG_4053.jpg">
+<img width="32%" src="images/IMG_4055.jpg">
+<img width="32%" src="images/IMG_4056.jpg">
+<img width="32%" src="images/IMG_4059.jpg">
+<img width="32%" src="images/IMG_4064.jpg">
+<img width="32%" src="images/IMG_4065.jpg">
+<img width="32%" src="images/IMG_4067.jpg">
+<img width="32%" src="images/IMG_4205.jpg">
+<p>Grace asked for the steam vent.</p>
+<img width="32%" src="images/IMG_4206.jpg">
+<img width="32%" src="images/IMG_4207.jpg">
+<div style="break-before: page; page-break-before: always;"></div><h1 id="shower-bench"><a class="header" href="#shower-bench">Shower Bench</a></h1>
+<img width="30%" src="images/IMG_3923.jpg">
+<img width="30%" src="images/IMG_3926.jpg">
+<img width="30%" src="images/IMG_3927.jpg">
+<img width="30%" src="images/IMG_3928.jpg">
+<img width="30%" src="images/IMG_3929.jpg">
+<div style="break-before: page; page-break-before: always;"></div><h1 id="shower-drain"><a class="header" href="#shower-drain">Shower Drain</a></h1>
+<p><img src="images/IMG_3936.jpg" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="sink"><a class="header" href="#sink">Sink</a></h1>
+<p><img src="images/IMG_3960.jpg" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="shower-valve-plumbing"><a class="header" href="#shower-valve-plumbing">Shower Valve Plumbing</a></h1>
+<img width="30%" src="images/IMG_3937.jpg">
+<img width="30%" src="images/IMG_3993.jpg">
+<img width="30%" src="images/IMG_3994.jpg">
+<img width="30%" src="images/IMG_3995.jpg">
+<img width="30%" src="images/IMG_3996.jpg">
+<img width="30%" src="images/IMG_3997.jpg">
+<img width="30%" src="images/IMG_3998.jpg">
+<img width="30%" src="images/IMG_3999.jpg">
+<img width="30%" src="images/IMG_4001.jpg">
+<p>The fireblock foam is required by code.</p>
+<p>For the hand shower pipe, I fastened it a couple feet below the elbow, in order to leave some wiggle room in case I needed to pull it forward for tile clearance, but also keep it snug against the tile.  In fact, this is exactly what happened.</p>
+<img width="30%" src="images/IMG_4006.jpg">
+<img width="30%" src="images/IMG_4010.jpg">
+<p>Notice from the pic on the left that I had forgotten to put in water hammer arrestors.  There were some by the sink originally, but now they're gone, so these are extra-necessary.</p>
+<img width="30%" src="images/IMG_4011.jpg">
+<p>13 Feb 2022 - Everything shower-plumbing-related pretty much in place and ready for rough plumbing inspection.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="windows"><a class="header" href="#windows">Windows</a></h1>
+<img width="32%" src="images/IMG_4047.jpg">
+<img width="32%" src="images/IMG_4048.jpg">
+<img width="32%" src="images/IMG_4049.jpg">
+<img width="32%" src="images/IMG_4050.jpg">
+<img width="32%" src="images/IMG_4060.jpg">
+<img width="32%" src="images/IMG_4061.jpg" alt="27 Feb 2022">
+<img width="32%" src="images/IMG_4412.jpg">
+<img width="32%" src="images/IMG_4413.jpg">
+<img width="32%" src="images/IMG_4414.jpg">
+<img width="32%" src="images/IMG_4415.jpg">
+<img width="32%" src="images/IMG_4416.jpg">
+<img width="32%" src="images/IMG_4417.jpg">
+<img width="32%" src="images/IMG_4418.jpg">
+<img width="32%" src="images/IMG_4419.jpg">
+<img width="32%" src="images/IMG_4420.jpg">
+<img width="32%" src="images/IMG_4421.jpg">
+<img width="32%" src="images/IMG_4422.jpg">
+<img width="32%" src="images/IMG_4423.jpg">
+<img width="32%" src="images/IMG_4424.jpg">
+<img width="32%" src="images/IMG_4425.jpg">
+<img width="32%" src="images/IMG_4426.jpg">
+<img width="32%" src="images/IMG_4427.jpg">
+<img width="32%" src="images/IMG_4428.jpg">
+<img width="32%" src="images/IMG_4429.jpg">
+<img width="32%" src="images/IMG_4430.jpg">
+<img src="images/IMG_4786.jpg">
+<div style="break-before: page; page-break-before: always;"></div><h1 id="shower-cubbyhole"><a class="header" href="#shower-cubbyhole">Shower Cubbyhole</a></h1>
+<p><img src="images/IMG_4055.jpg" alt="" /></p>
+<p>I'm proud of how the shower cubby turned out.  I wasn't sure how I'd tile the cubby right up until I started piecing it in.  I had the wall done around it, and I tried a piece at the bottom right that just happened to line up with the seam.  At that point, I realized it would work beautifully to continue the vertical line right up the back of the cubby.</p>
+<img width="32%" src="images/IMG_4045.jpg">
+<img width="32%" src="images/IMG_4056.jpg">
+<img width="32%" src="images/IMG_4242.jpg">
+<img width="32%" src="images/IMG_4520.jpg">
+<img width="32%" src="images/IMG_4521.jpg">
+<img width="32%" src="images/IMG_4522.jpg">
+<img width="32%" src="images/IMG_4523.jpg">
+<img width="32%" src="images/IMG_4525.jpg">
+<img width="32%" src="images/IMG_4526.jpg">
+<p>I tiled the cubby from bottom to top, the floor with a very slight slope toward the shower.  I sealed the edges with seam tape and redgard.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mudding"><a class="header" href="#mudding">Mudding</a></h1>
+<p><img src="images/IMG_4218.jpg" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="waterproofing"><a class="header" href="#waterproofing">Waterproofing</a></h1>
+<h3 id="started-26-march-2022"><a class="header" href="#started-26-march-2022">Started 26 March 2022</a></h3>
+<img width="30%" src="images/IMG_4236.jpg" >
+<img width="30%" src="images/IMG_4239.jpg" >
+<img width="30%" src="images/IMG_4240.jpg" >
+<p>5&quot; waterproofing seam tape around the shower drain and all corners.  Triple-coat RedGard on the shower floor and 18&quot; up the wall.</p>
+<img width="30%" src="images/IMG_4241.jpg" >
+<img width="30%" src="images/IMG_4242.jpg" >
+<img width="30%" src="images/IMG_4246.jpg" >
+<p>Seam tape around the shower cubby corners.</p>
+<img width="30%" src="images/IMG_4249.jpg" >
+<h3 id="getting-the-drain-waterproofing-right"><a class="header" href="#getting-the-drain-waterproofing-right">Getting the Drain Waterproofing Right</a></h3>
+<p>Very important to seal the floor around the drain, all the way over the edge of the drain base, so that water can only go down the drain, even if it gets thru the grout and underneath the tile.</p>
+<img width="30%" src="images/IMG_4248.jpg" >
+<p>I screwed the drain flange bolts partially in and taped the heads, so the RedGard wouldn't foul the threads.</p>
+<img width="30%" src="images/IMG_4254.jpg" >
+<img width="30%" src="images/IMG_4257.jpg" >
+<img width="30%" src="images/IMG_4259.jpg" >
+<p>Fastening the flange down over the waterproofing.  Note the weep channels and weep holes in the flange, to allow water to escape into the drain. </p>
+<p>Floating the final slope into the edge of the drain grate.  The grate is aligned at a 45 degree angle, parallel with the edge of the shower bench.</p>
+<p>Note the small gravel (courtesy of Lydia's fish tank supplies😃) embedded in the mortar. Under the lip of the grate, it is loose around the flange, preventing the weep holes from getting plugged with mortar. If any water were to get beneath the tile (the grout is not 100% waterproof), it still has a route to the drain and not the floor.</p>
+<img width="30%" src="images/IMG_4250.jpg" >
+<img width="30%" src="images/IMG_4251.jpg" >
+<img width="30%" src="images/IMG_4252.jpg" >
+<p>Didn't need to RedGard the whole thing, but I had 3 gallons, and didn't want to waste it.  Although if I'd known how much trouble it would be to get a smooth surface to paint on top of RedGard, I probably would have thrown the extra RedGard away!</p>
+<p>Oh well.  At least the walls have absolutely no chance of steam getting through.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tiling---1-april-to-31-may"><a class="header" href="#tiling---1-april-to-31-may">Tiling - 1 April to 31 May</a></h1>
+<p><img src="images/IMG_4255.jpg" alt="" /></p>
+<p>A trial layout, to see how the diagonal pattern would intersect with the drain and walls.  The broken pieces to the left are my attempt to cut a drain-sized square from the middle of a six-inch tile.  It became abundantly clear that approach was never going to work!</p>
+<img width="30%" src="images/IMG_4260.jpg">
+<p>The drain grate, mortared into its final position.  See <a href="waterproofing.html#getting-the-drain-waterproofing-right">Getting the Drain Waterproofing Right</a>.</p>
+<h3 id="first-tile-laid---1st-april"><a class="header" href="#first-tile-laid---1st-april">First tile laid - 1st April</a></h3>
+<img width="30%" src="images/IMG_4275.jpg" alt="1 Apr 2022">
+<img width="30%" src="images/IMG_4302.jpg" alt="3 Apr 2022">
+<img width="30%" src="images/IMG_4304.jpg" alt="5 Apr 2022">
+<p>The shower floor is coming along well; the diagonal pattern aligns cleanly with the bench and the grate, and the six-inch tiles are laying nicely into the concave slope of the shower floor.</p>
+<h3 id="more-floor---8th-april"><a class="header" href="#more-floor---8th-april">More floor - 8th April</a></h3>
+<img width="30%" src="images/IMG_4306.jpg" alt="8 Apr 2022">
+<img width="30%" src="images/IMG_4307.jpg" alt="8 Apr 2022">
+<img width="30%" src="images/IMG_4310.jpg" alt="8 Apr 2022">
+<p>So many tiles...</p>
+<h3 id="more-floor---9th-april"><a class="header" href="#more-floor---9th-april">More floor - 9th April</a></h3>
+<img width="30%" src="images/IMG_4313.jpg" alt="9 Apr 2022">
+<img width="30%" src="images/IMG_4314.jpg" alt="9 Apr 2022">
+<img width="30%" src="images/IMG_4316.jpg" alt="10 Apr 2022">
+<h3 id="tiling-the-bench---2nd-may-to-4th-may"><a class="header" href="#tiling-the-bench---2nd-may-to-4th-may">Tiling the Bench - 2nd May to 4th May</a></h3>
+<img width="30%" src="images/IMG_4440.jpg" alt="2 May 2022">
+<img width="30%" src="images/IMG_4443.jpg" alt="3 May 2022">
+<img width="30%" src="images/IMG_4445.jpg" alt="4 May 2022">
+<h3 id="laying-wall-tile---30-april-to-31-may"><a class="header" href="#laying-wall-tile---30-april-to-31-may">Laying Wall Tile - 30 April to 31 May</a></h3>
+<p>One tricky bit about the walls was positioning the tile seams such that there were no awkward intersections with fixtures, floors, or corners.  I didn't want to deal with cutting and placing slivers of tile, and it wouldn't look good or last well.</p>
+<p>Also, I needed to keep everything aligned all the way around the shower.</p>
+<img width="30%" src="images/IMG_4434.jpg" >
+<img width="30%" src="images/IMG_4435.jpg" >
+<img width="30%" src="images/IMG_4444.jpg" >
+<p>I started from the middle of the bench, so that it would align with the floor seams.  On the opposite wall, I started so that the steam vent, the cubby, the floor, and the corner would come out right.</p>
+<p>Now I needed to make everything come together.  As I went, I realized I had a 3/16&quot; height discrepancy that would have to be resolved before the courses met.  This was due to my uncertainty about exactly how the seam width would work out.</p>
+<img width="30%" src="images/IMG_4453.jpg" >
+<img width="30%" src="images/IMG_4454.jpg" >
+<img width="30%" src="images/IMG_4455.jpg" >
+<img width="30%" src="images/IMG_4520.jpg" >
+<h3 id="shower-cubby---11-may"><a class="header" href="#shower-cubby---11-may">Shower Cubby - 11 May</a></h3>
+<img width="30%" src="images/IMG_4521.jpg" >
+<img width="30%" src="images/IMG_4522.jpg" >
+<img width="30%" src="images/IMG_4523.jpg" >
+<img width="30%" src="images/IMG_4526.jpg" >
+<h3 id="continuing-with-wall-tile-"><a class="header" href="#continuing-with-wall-tile-">Continuing With Wall Tile ...</a></h3>
+<img width="30%" src="images/IMG_4524.jpg" >
+<img width="30%" src="images/IMG_4525.jpg" >
+<img width="30%" src="images/IMG_4528.jpg" >
+<img width="30%" src="images/IMG_4530.jpg" >
+<img width="30%" src="images/IMG_4529.jpg" >
+<img width="30%" src="images/IMG_4531.jpg" >
+<img width="30%" src="images/IMG_4532.jpg" >
+<img width="30%" src="images/IMG_4533.jpg" >
+<img width="30%" src="images/IMG_4538.jpg" >
+<img width="30%" src="images/IMG_4539.jpg" >
+<img width="30%" src="images/IMG_4572.jpg" >
+<img width="30%" src="images/IMG_4573.jpg" >
+<img width="30%" src="images/IMG_4574.jpg" >
+<img width="30%" src="images/IMG_4575.jpg" >
+<img width="30%" src="images/IMG_4576.jpg" >
+<img width="30%" src="images/IMG_4577.jpg" >
+<img width="30%" src="images/IMG_4578.jpg" >
+<h3 id="oops---how-to-break-and-fix-a-tile---22-may"><a class="header" href="#oops---how-to-break-and-fix-a-tile---22-may">Oops - How to Break and Fix a Tile - 22 May</a></h3>
+<img width="30%" src="images/IMG_4582.jpg" >
+<img width="30%" src="images/IMG_4583.jpg" >
+<p>Careful work with a cold chisel is required, but it's not too bad.</p>
+<h3 id="back-to-wall-tile-"><a class="header" href="#back-to-wall-tile-">Back To Wall Tile ...</a></h3>
+<img width="30%" src="images/IMG_4584.jpg" >
+<img width="30%" src="images/IMG_4585.jpg" >
+<img width="30%" src="images/IMG_4588.jpg" >
+<img width="30%" src="images/IMG_4589.jpg" >
+<img width="30%" src="images/IMG_4592.jpg" >
+<img width="30%" src="images/IMG_4593.jpg" >
+<img width="30%" src="images/IMG_4594.jpg" >
+<img width="30%" src="images/IMG_4596.jpg" >
+<img width="30%" src="images/IMG_4597.jpg" >
+<img width="30%" src="images/IMG_4598.jpg" >
+<img width="30%" src="images/IMG_4599.jpg" >
+<img width="30%" src="images/IMG_4632.jpg" >
+<img width="30%" src="images/IMG_4633.jpg" >
+<img width="30%" src="images/IMG_4634.jpg" >
+<img width="30%" src="images/IMG_4635.jpg" >
+<img width="30%" src="images/IMG_4636.jpg" >
+<img width="30%" src="images/IMG_4637.jpg" >
+<p>Finished tiling two months to the day after I started.  433 full or partial tiles laid!  It felt almost like I knew each one by name...</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="grouting"><a class="header" href="#grouting">Grouting</a></h1>
+<p><img src="images/IMG_4565.jpg" alt="" /></p>
+<p>Prototyping a dark &quot;Coffee Bean&quot; grout...Nope.</p>
+<p><img src="images/IMG_4571.jpg" alt="" /></p>
+<p>The light colored is looking much better. Polyblend Plus non-sanded, #386 Oyster Gray.  (Pay no attention to reddish hue, it's the RedGard all over the walls and ceiling).</p>
+<p><img src="images/IMG_4648.jpg" alt="" /></p>
+<p>Shower floor and bench grouted.  (The not-grouted floor tile is where I replaced a chipped tile).</p>
+<p><img src="images/IMG_4649.jpg" alt="" /></p>
+<p>Hole for the shower pipe.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="painting"><a class="header" href="#painting">Painting</a></h1>
+<p><img src="images/IMG_4681.jpg" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wood-trim"><a class="header" href="#wood-trim">Wood Trim</a></h1>
+<p><img src="images/IMG_4764.jpg" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wrap-up"><a class="header" href="#wrap-up">Wrap-Up</a></h1>
+<p><img src="images/IMG_4795.jpg" alt="" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
