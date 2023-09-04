@@ -92,11 +92,33 @@
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
@@ -149,22 +171,19 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="my-diy-bathroom-renovation"><a class="header" href="#my-diy-bathroom-renovation">My DIY Bathroom Renovation</a></h1>
-<p><img src="images/IMG_4740.jpg" alt="" /></p>
+<p>In January 2022, I finally tackled a project that had been on my mind for awhile: redoing our master bathroom.  It took me six months, and was more involved than I expected (how many DIY'ers have said that before 🤔).  By the time it was done, I was really ready to do something else with my evenings and weekends.</p>
 <!--more-->
+<p>With all that said, it turned out GREAT.  I couldn't be more pleased with the results.  It's so much more functional, efficient, safe, easy to clean.  I love its peace-inducing aesthetics.</p>
+<p><img src="images/IMG_4740.jpg" alt="" /></p>
+<p>I did it all -- design, demolition, plumbing, electrical, carpentry, drywall, waterproofing, tiling, painting, insulation, window replacement.  I am fortunate to have friends in the trades who guided me through the electrical and plumbing bits especially.  My brother loaned me his tile saw.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="inspiration"><a class="header" href="#inspiration">Inspiration</a></h1>
-<ul>
-<li>Aunt came to stay during reunion, broke the arm off the rain-head showerhead</li>
-<li>demo'd Mom's shower, gained confidence that I could do same</li>
-<li>Mom had a walk-in shower put in. a) looked pretty good, and b) pretty sure I could do better
-<ul>
-<li>I did not realize how long it would take</li>
-</ul>
-</li>
-</ul>
-<p><img src="images/2021-09-15-moms-bathroom-demo-IMG_3025.jpg" alt="" title="Sep 15, 2021" /></p>
-<p>Megan hosted us in 2021, and I was impressed with the bathroom they did, especially the textured light tile that they used. I liked the bench, the wide grout spacing, and the large tiles.
-<img src="images/IMG_5343.jpg" alt="" title="Fall 2021" /></p>
-<p>This eventually led me to choose the Roman travertine-style &quot;Travisano Trevi&quot; tile at Home Depot, and guided me to more vaguely Roman style choices expressing a simple, uncluttered, calm theme.
+<p>During a 2021 Brauer reunion in Southern Illinos at the end of August, a relative who came to stay at Mom's house broke off the rain-head showerhead while trying to adjust it.  When I took a look and told Mom it needed some &quot;deep fixing&quot; (the plastic pipe was broken off behind the shower), she asked Why not just redo the whole shower?  In mid-September, I did the demo, taking out the fiberglass tub/shower.</p>
+<p>Mom had a local handyman put in a walk-in shower with custom tile, getting it done shortly before Thanksgiving.  Parts of it were inspired by Uncle Rich's DIY shower at his house by Lake Petersburg.  When I saw Mom's shower, I came away thinking that (a) it looked pretty good, and b) I was sure I could do better.</p>
+<p>In early October, I went ahead and put in a dedicated water heater (more on that later), as a prelude to the bathroom work.</p>
+<p><img src="images/2021-09-15-moms-bathroom-demo-IMG_3025.jpg" alt="" title="Sep 15, 2021" /> <br><span class="caption">Demo'ing Mom's downstairs bathroom, Septembrer 2021</span></p>
+<p>When I stayed over at Jim and Megan's house, I took a look at their bathroom, and loved the Roman-style textured light tile that they used. I liked the bench, the wide grout spacing, and the large tiles.  I resolved to use something close to it.
+<img src="images/IMG_5343.jpg" alt="" title="Fall 2021" /> <br><span class="caption">Jim and Megan's bathroom</span></p>
+<p>I eventually found the travertine-style &quot;Travisano Trevi&quot; tile at Home Depot.  In turn, that pattern guided me to further Roman-style choices expressing a simple, uncluttered, calm theme.
 <img src="images/JDQV1899.jpg" alt="" title="Fall 2021" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="dedicated-water-heater"><a class="header" href="#dedicated-water-heater">Dedicated Water Heater</a></h1>
 <p>As the first step in upgrading the bathroom, I put a dedicated 20-gallon water heater in the crawl space just below.</p>
@@ -178,28 +197,32 @@
 </style>
 <div class="clearfix">
 <img src="images/IMG_3095.jpg" alt="10 Oct 2021" width="50%" style="float:right">
-In the course of installing the water heater itself, I refactored a lot of hot water piping. I was able to remove a 3/4" hot water line that ran all the way across the house.  That line had been added when the attached garage at the end of the house was converted to a master bedroom and bathroom.
-<p>It took a looong time to get hot water to the bathroom, and wasted lots of hot water in the process.</p>
+Along the way, I refactored a lot of piping. I removed a 3/4" hot water line running all the way across the house, which had been added when the attached garage at the north end of the house was converted to a master bedroom and bathroom.  It was taking a looong time to get hot water to the bathroom, and wasted lots of hot water in the process.
 <p>I also removed a bunch of unused pipe that had been left in place from previous projects. --&gt;</p>
 </div>
-<p>It was an interesting exercise re-attaching not only the dishwasher line but also the humidifier tap (I didn't realize at first that the humidier was being fed <em>hot</em> water, but it makes sense; hot water evaporates more quickly).  I discovered the SharkBite fittings, which are expensive but awesome, especially where (a) you can't easily sweat a copper joint without setting something on fire, or (b) you might need to disconnect the pipe later for whatever reason.  In the latter case, the SharkBite fitting on the water heater's hot water line came in handy when I discovered the humidifier requirement; I popped off the fitting, added a tee, and popped it back onto the bottom of the tee:</p>
-<p><img src="images/2021-10-09-water-heater-install-hookup-IMG_3093.JPG" alt="" /></p>
-<p>Feeding the humidifier from a nearby water heater saves energy; the humidifier is more effective since it's getting hotter water.  Water trickles into the humidifier, and by the time it reached the humidifier from the far-off main water heater, it was merely warm.</p>
-<style>
-.img-row {
-  display: flex;
-  justify-content: space-around;
-}
-</style>
-<p>As part of running power to the water heater, I also fixed an ancient wiring mess providing power to the oven.</p>
+<p>It was an interesting exercise re-attaching not only the dishwasher line but also the humidifier tap. I didn't realize at first that the humidier was being fed <em>hot</em> water, although it makes sense; hot water evaporates more quickly.  I discovered SharkBite fittings, expensive but awesome, especially where (a) one can't easily sweat a copper joint without setting something on fire, or (b) one might need to disconnect the pipe later for whatever reason. </p>
+<p>In the latter case, a SharkBite fitting on the water heater's hot water line came in handy when I discovered the humidifier requirement; I popped off the fitting, added a tee, and popped it back onto the bottom of the tee:</p>
 <div class="img-row"> 
-  <div>
+ <div class="img-gallery">
+    <div> Before the humidier fitting... </div>
+   <img src="images/2021-10-09-water-heater-install-hookup-IMG_3093.JPG">
+ </div>
+ <div class="img-gallery">
+    <div>...and after </div>
+   <img src="images/IMG_3170.JPG">
+ </div>
+</div>
+<p>Note that the tee isn't only for the humidier.  The humidifier actually taps into the line via a saddle valve.  The additional plastic quick-coupling fitting (not Shark-Bite) goes to the dishwasher, which I'd also not hooked up initially. </p>
+<p>Feeding the humidifier from a nearby hot water source saves energy, and the humidifier is more effective since it's getting hotter water.  Previously, by the time the trickle of water reached the humidifier from the far-off main water heater, it was merely warm.</p>
+<p>While running power to the water heater, I also fixed an ancient wiring mess to the oven.</p>
+<div class="img-row"> 
+  <div class="img-gallery">
     <div>From this (note the extension cord 😮)... </div>
-    <img width="80%" src="images/2021-10-08-water-heater-install-wiring-before-IMG_3089.jpg" alt="8 Oct 2021">
+    <img src="images/2021-10-08-water-heater-install-wiring-before-IMG_3089.jpg" alt="8 Oct 2021">
   </div>
-  <div>
+  <div class="img-gallery">
     <div> ...to this: </div>
-    <img width="80%" src="images/2021-10-09-water-heater-install-wiring-after-IMG_3091.jpg"  alt="9 Oct 2021">
+    <img src="images/2021-10-09-water-heater-install-wiring-after-IMG_3091.jpg"  alt="9 Oct 2021">
   </div>
 </div>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="design-drivers-for-remodeling"><a class="header" href="#design-drivers-for-remodeling">Design Drivers for Remodeling</a></h1>
