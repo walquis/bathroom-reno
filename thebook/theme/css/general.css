@@ -189,3 +189,18 @@ blockquote {
 .result-no-output {
     font-style: italic;
 }
+
+.caption {
+    color: dimgray;
+    font-style: italic;
+}
+
+/* Used in e.g. water-heater.md */
+.img-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-gallery {
+    padding: 20px;
+}
