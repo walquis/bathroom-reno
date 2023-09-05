@@ -8,5 +8,6 @@ With all that said, it turned out GREAT.  I couldn't be more pleased with the re
 
 ![](images/IMG_4740.jpg)
 
-I did it all -- design, demolition, plumbing, electrical, carpentry, drywall, waterproofing, tiling, painting, insulation, window replacement.  I am fortunate to have friends in the trades who guided me through the electrical and plumbing bits especially.  My brother loaned me his tile saw.
+During those six months, I did design, demolition, plumbing, electrical, carpentry, drywall, waterproofing, tiling, painting, insulation, window replacement.  I am fortunate to have friends in the trades who guided me through the electrical and plumbing bits especially.  My brother loaned me his tile saw.  I am also fortunate that Lisle supports DYI'ers by allowing them to act as their own contractors for plumbing and electrical (Downers Grove, for instance, does not allow that).
+
 

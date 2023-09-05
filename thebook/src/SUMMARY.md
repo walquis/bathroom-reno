@@ -1,9 +1,8 @@
 # Table of Contents
 - [Introduction](./introduction.md)
 - [Inspiration](./inspiration.md)
+- [Design Considerations](./design.md)
 - [Dedicated Water Heater](./water-heater.md)
-- [Design Drivers for Remodeling](./design.md)
-- ["Before"](./before.md)
 - [Demolition](./demolition.md)
 - [Heated Floor](./heated-floor.md)
 - [Ceiling and Light](./ceiling-and-light.md)
