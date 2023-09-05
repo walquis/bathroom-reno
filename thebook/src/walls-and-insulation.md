@@ -6,11 +6,12 @@ I initially brought home some MoldTough green drywall, but then discovered that 
 
 <img width="32%" src="images/IMG_3916.jpg">
 <img width="32%" src="images/IMG_3917.jpg">
+<img width="32%" src="images/IMG_3933.jpg">
 <img width="32%" src="images/IMG_4023.jpg">
 
 Insulation started going in on 19 Jan.
 
-Wallboard started a month later, 20 Feb.  I needed to do the plumbing and wiring, and have the rough inspection done first.
+Cement backerboard started a month later, 20 Feb.  I needed to do the plumbing and wiring, and have the rough inspection done first.
 
 <video width="32%" controls>
   <source src="images/IMG_4003-480p.mov">
@@ -31,7 +32,7 @@ I sistered a 2x6 along a rafter, in order to anchor the top of the wall where I 
 <img width="32%" src="images/IMG_4032.jpg">
 <img width="32%" src="images/IMG_4207.jpg">
 
-The height difference between the shower ceiling and the rest of the bathroom was an issue.  I resolved it by adding a 2x2 after putting up the rest of the backer board.
+The height difference between the shower ceiling and the rest of the bathroom was an issue.  I resolved it by adding a 2x2 after putting up the rest of the backer board.  In retrospect, I should have put the 2x2 on the bottom of the rafters, and just lowered the shower ceiling by 2 inches.
 
 <img width="32%" src="images/IMG_4033.jpg">
 <img width="32%" src="images/IMG_4034.jpg">

@@ -1,5 +1,7 @@
 # Shower Valve Plumbing
 
+<img width="30%" src="images/IMG_3874.jpg">
+
 <img width="30%" src="images/IMG_3937.jpg">
 <img width="30%" src="images/IMG_3993.jpg">
 <img width="30%" src="images/IMG_3994.jpg">
@@ -9,6 +11,13 @@
 <img width="30%" src="images/IMG_3998.jpg">
 <img width="30%" src="images/IMG_3999.jpg">
 <img width="30%" src="images/IMG_4001.jpg">
+<img width="30%" src="images/IMG_4006.jpg">
+<img width="30%" src="images/IMG_4010.jpg">
+<img width="30%" src="images/IMG_4248.jpg">
+<img width="30%" src="images/IMG_4650.jpg">
+<img width="30%" src="images/IMG_4737.jpg">
+<img width="30%" src="images/IMG_4740.jpg">
+<img width="30%" src="images/IMG_4742.jpg">
 
 The fireblock foam is required by code.
 

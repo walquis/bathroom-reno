@@ -17,3 +17,13 @@ While Grace was out of town...
 I had already bought the new sink.  I put it in while taking out the linoleum floor.
 
 ![](images/IMG_3873.jpg "Jan 9")
+
+![](images/IMG_3905.jpg)
+
+![](images/IMG_3908.jpg)
+
+![](images/IMG_3910.jpg)
+
+![](images/IMG_4415.jpg)
+
+![](images/IMG_4416.jpg)
