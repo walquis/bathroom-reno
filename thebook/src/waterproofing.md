@@ -10,10 +10,14 @@
 <img width="30%" src="images/IMG_4241.jpg" >
 <img width="30%" src="images/IMG_4242.jpg" >
 <img width="30%" src="images/IMG_4246.jpg" >
+<img width="30%" src="images/IMG_4247.jpg" >
 
 Seam tape around the shower cubby corners.
 
 <img width="30%" src="images/IMG_4249.jpg" >
+<img width="30%" src="images/IMG_4250.jpg" >
+<img width="30%" src="images/IMG_4251.jpg" >
+<img width="30%" src="images/IMG_4252.jpg" >
 
 
 ### Getting the Drain Waterproofing Right

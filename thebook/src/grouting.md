@@ -13,6 +13,15 @@ The light colored is looking much better. Polyblend Plus non-sanded, #386 Oyster
 Shower floor and bench grouted.  (The not-grouted floor tile is where I replaced a chipped tile).
 
 
-![](images/IMG_4649.jpg)
+<img width="32%" src="images/IMG_4649.jpg">
+<img width="32%" src="images/IMG_4650.jpg">
+<img width="32%" src="images/IMG_4651.jpg">
+<img width="32%" src="images/IMG_4655.jpg">
+<img width="32%" src="images/IMG_4656.jpg">
+<img width="32%" src="images/IMG_4657.jpg">
+<img width="32%" src="images/IMG_4658.jpg">
+<img width="32%" src="images/IMG_4659.jpg">
 
-Hole for the shower pipe.
+<p/>
+<img width="32%" src="images/IMG_4660.jpg">
+<br>June 8th - Grouting finished!

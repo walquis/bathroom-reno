@@ -50,3 +50,5 @@ Sometimes I like to wash up in the sink.  The small sink did not lend itself to 
 - Wiring the shower light from the attic.
 - Learning to tile and grout.
 - Learning to replace a window.
+
+<img src="images/IMG_3967.jpg">

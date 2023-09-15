@@ -26,20 +26,24 @@ So many tiles...
 <img width="30%" src="images/IMG_4313.jpg" alt="9 Apr 2022">
 <img width="30%" src="images/IMG_4314.jpg" alt="9 Apr 2022">
 <img width="30%" src="images/IMG_4316.jpg" alt="10 Apr 2022">
+<img width="30%" src="images/IMG_4400.jpg">
+<img width="30%" src="images/IMG_4402.jpg">
 
-### Tiling the Bench - 2nd May to 4th May
+### Tiling the Bench - 30th Apr to 4th May
+<img width="30%" src="images/IMG_4434.jpg" alt="2 May 2022">
 <img width="30%" src="images/IMG_4440.jpg" alt="2 May 2022">
 <img width="30%" src="images/IMG_4443.jpg" alt="3 May 2022">
 <img width="30%" src="images/IMG_4445.jpg" alt="4 May 2022">
 
 ### Laying Wall Tile - 30 April to 31 May
 
-One tricky bit about the walls was positioning the tile seams such that there were no awkward intersections with fixtures, floors, or corners.  I didn't want to deal with cutting and placing slivers of tile, and it wouldn't look good or last well.
+One tricky bit about the walls was positioning the tile seams horizontally and vertically to avoid awkward intersections with fixtures, floors, or corners.  I didn't want to deal with cutting and placing slivers of tile, which wouldn't look good nor last well.
 
 Also, I needed to keep everything aligned all the way around the shower.
 
 <img width="30%" src="images/IMG_4434.jpg" >
 <img width="30%" src="images/IMG_4435.jpg" >
+<img width="30%" src="images/IMG_4441.jpg" >
 <img width="30%" src="images/IMG_4444.jpg" >
 
 I started from the middle of the bench, so that it would align with the floor seams.  On the opposite wall, I started so that the steam vent, the cubby, the floor, and the corner would come out right.
@@ -61,8 +65,8 @@ Now I needed to make everything come together.  As I went, I realized I had a 3/
 <img width="30%" src="images/IMG_4524.jpg" >
 <img width="30%" src="images/IMG_4525.jpg" >
 <img width="30%" src="images/IMG_4528.jpg" >
-<img width="30%" src="images/IMG_4530.jpg" >
 <img width="30%" src="images/IMG_4529.jpg" >
+<img width="30%" src="images/IMG_4530.jpg" >
 <img width="30%" src="images/IMG_4531.jpg" >
 <img width="30%" src="images/IMG_4532.jpg" >
 <img width="30%" src="images/IMG_4533.jpg" >
@@ -74,13 +78,18 @@ Now I needed to make everything come together.  As I went, I realized I had a 3/
 <img width="30%" src="images/IMG_4575.jpg" >
 <img width="30%" src="images/IMG_4576.jpg" >
 <img width="30%" src="images/IMG_4577.jpg" >
-<img width="30%" src="images/IMG_4578.jpg" >
 
-### Oops - How to Break and Fix a Tile - 22 May
+<p/>
+<img width="51%" src="images/IMG_4578.jpg" >
+<br>Holes for the shower pipes.
+
+<p/>
+
+### How to Break 😕 and Fix a Tile - 22 May
 <img width="30%" src="images/IMG_4582.jpg" >
 <img width="30%" src="images/IMG_4583.jpg" >
 
-Careful work with a cold chisel is required, but it's not too bad.
+Careful work with a hammer and cold chisel is required, but it's not as bad as I had feared.
 
 ### Back To Wall Tile ...
 <img width="30%" src="images/IMG_4584.jpg" >
@@ -101,4 +110,4 @@ Careful work with a cold chisel is required, but it's not too bad.
 <img width="30%" src="images/IMG_4636.jpg" >
 <img width="30%" src="images/IMG_4637.jpg" >
 
-Finished tiling two months to the day after I started.  433 full or partial tiles laid!  It felt almost like I knew each one by name...
+Finished tiling 31 May, nearly two months to the day after I started.  433 full or partial tiles laid!
