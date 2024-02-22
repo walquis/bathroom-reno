@@ -1,7 +1,7 @@
 # Table of Contents
 - [Introduction](./introduction.md)
 - [Inspiration](./inspiration.md)
-- [Design Considerations](./design.md)
+- [Design](./design.md)
 - [Dedicated Water Heater](./water-heater.md)
 - [Demolition](./demolition.md)
 - [Heated Floor](./heated-floor.md)
@@ -17,6 +17,5 @@
 - [Tiling](./tiling.md)
 - [Grouting](./grouting.md)
 - [Mudding](./mudding.md)
-- [Painting](./painting.md)
-- [Wood Trim](./wood-trim.md)
+- [Painting and Trim](./painting-and-trim.md)
 - [Wrap-Up](./wrap-up.md)

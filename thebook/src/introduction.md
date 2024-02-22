@@ -1,13 +1,14 @@
 # My DIY Bathroom Renovation
 
-In January 2022, I finally tackled a project that had been on my mind for awhile: redoing our master bathroom.  It took me six months, and was more involved than I expected (how many DIY'ers have said that before 🤔).  By the time it was done, I was really ready to do something else with my evenings and weekends.
+In January 2022, I began renovating our master bathroom.  It took me six months and was more involved than I expected (how many DIY'ers have said that before? 🤔).
+
+By the time it was done, I was ready to do something else with my evenings and weekends.
 
 <!--more-->
 
-With all that said, it turned out GREAT.  I couldn't be more pleased with the results.  It's so much more functional, efficient, safe, easy to clean.  I love its peace-inducing aesthetics.  
+That said, it turned out really well.  It's much warmer, more functional, efficient, safe, easy to clean.  I love the peaceful aesthetics.  
 
 ![](images/IMG_4740.jpg)
 
-During those six months, I did design, demolition, plumbing, electrical, carpentry, drywall, waterproofing, tiling, painting, insulation, window replacement.  I am fortunate to have friends in the trades who guided me through the electrical and plumbing bits especially.  My brother loaned me his tile saw.  I am also fortunate that Lisle supports DYI'ers by allowing them to act as their own contractors for plumbing and electrical (Downers Grove, for instance, does not allow that).
-
+The renovation required me to wear these hats: design, demolition, plumbing, electrical, carpentry, drywall, waterproofing, tiling, painting, insulation, window replacement.  Friends in the trades guided me, especially with the electrical and plumbing bits.  My brother loaned me his tile saw.  I am fortunate that Lisle supports DYI'ers by allowing them to act as their own contractors for plumbing and electrical (Downers Grove, for instance, does not allow that).
 
