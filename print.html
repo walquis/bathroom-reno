@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js rust">
+<html lang="en" class="rust" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Bathroom Reno</title>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
@@ -14,7 +14,7 @@
 
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -35,7 +35,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -65,31 +65,38 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('rust')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="inspiration.html"><strong aria-hidden="true">2.</strong> Inspiration</a></li><li class="chapter-item expanded "><a href="design.html"><strong aria-hidden="true">3.</strong> Design Considerations</a></li><li class="chapter-item expanded "><a href="water-heater.html"><strong aria-hidden="true">4.</strong> Dedicated Water Heater</a></li><li class="chapter-item expanded "><a href="demolition.html"><strong aria-hidden="true">5.</strong> Demolition</a></li><li class="chapter-item expanded "><a href="heated-floor.html"><strong aria-hidden="true">6.</strong> Heated Floor</a></li><li class="chapter-item expanded "><a href="ceiling-and-light.html"><strong aria-hidden="true">7.</strong> Ceiling and Light</a></li><li class="chapter-item expanded "><a href="walls-and-insulation.html"><strong aria-hidden="true">8.</strong> Walls and Insulation</a></li><li class="chapter-item expanded "><a href="shower-bench.html"><strong aria-hidden="true">9.</strong> Shower Bench</a></li><li class="chapter-item expanded "><a href="shower-drain.html"><strong aria-hidden="true">10.</strong> Shower Drain</a></li><li class="chapter-item expanded "><a href="sink-and-plumbing.html"><strong aria-hidden="true">11.</strong> Sink Plumbing</a></li><li class="chapter-item expanded "><a href="shower-plumbing-and-fixtures.html"><strong aria-hidden="true">12.</strong> Shower Plumbing and Fixtures</a></li><li class="chapter-item expanded "><a href="window.html"><strong aria-hidden="true">13.</strong> New Window</a></li><li class="chapter-item expanded "><a href="cubbyhole.html"><strong aria-hidden="true">14.</strong> Shower Cubbyhole</a></li><li class="chapter-item expanded "><a href="waterproofing.html"><strong aria-hidden="true">15.</strong> Waterproofing</a></li><li class="chapter-item expanded "><a href="tiling.html"><strong aria-hidden="true">16.</strong> Tiling</a></li><li class="chapter-item expanded "><a href="grouting.html"><strong aria-hidden="true">17.</strong> Grouting</a></li><li class="chapter-item expanded "><a href="mudding.html"><strong aria-hidden="true">18.</strong> Mudding</a></li><li class="chapter-item expanded "><a href="painting.html"><strong aria-hidden="true">19.</strong> Painting</a></li><li class="chapter-item expanded "><a href="wood-trim.html"><strong aria-hidden="true">20.</strong> Wood Trim</a></li><li class="chapter-item expanded "><a href="wrap-up.html"><strong aria-hidden="true">21.</strong> Wrap-Up</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="inspiration.html"><strong aria-hidden="true">2.</strong> Inspiration</a></li><li class="chapter-item expanded "><a href="design.html"><strong aria-hidden="true">3.</strong> Design</a></li><li class="chapter-item expanded "><a href="water-heater.html"><strong aria-hidden="true">4.</strong> Dedicated Water Heater</a></li><li class="chapter-item expanded "><a href="demolition.html"><strong aria-hidden="true">5.</strong> Demolition</a></li><li class="chapter-item expanded "><a href="heated-floor.html"><strong aria-hidden="true">6.</strong> Heated Floor</a></li><li class="chapter-item expanded "><a href="ceiling-and-light.html"><strong aria-hidden="true">7.</strong> Ceiling and Light</a></li><li class="chapter-item expanded "><a href="walls-and-insulation.html"><strong aria-hidden="true">8.</strong> Walls and Insulation</a></li><li class="chapter-item expanded "><a href="shower-bench.html"><strong aria-hidden="true">9.</strong> Shower Bench</a></li><li class="chapter-item expanded "><a href="shower-drain.html"><strong aria-hidden="true">10.</strong> Shower Drain</a></li><li class="chapter-item expanded "><a href="sink-and-plumbing.html"><strong aria-hidden="true">11.</strong> Sink Plumbing</a></li><li class="chapter-item expanded "><a href="shower-plumbing-and-fixtures.html"><strong aria-hidden="true">12.</strong> Shower Plumbing and Fixtures</a></li><li class="chapter-item expanded "><a href="window.html"><strong aria-hidden="true">13.</strong> New Window</a></li><li class="chapter-item expanded "><a href="cubbyhole.html"><strong aria-hidden="true">14.</strong> Shower Cubbyhole</a></li><li class="chapter-item expanded "><a href="waterproofing.html"><strong aria-hidden="true">15.</strong> Waterproofing</a></li><li class="chapter-item expanded "><a href="tiling.html"><strong aria-hidden="true">16.</strong> Tiling</a></li><li class="chapter-item expanded "><a href="grouting.html"><strong aria-hidden="true">17.</strong> Grouting</a></li><li class="chapter-item expanded "><a href="mudding.html"><strong aria-hidden="true">18.</strong> Mudding</a></li><li class="chapter-item expanded "><a href="painting-and-trim.html"><strong aria-hidden="true">19.</strong> Painting and Trim</a></li><li class="chapter-item expanded "><a href="wrap-up.html"><strong aria-hidden="true">20.</strong> Wrap-Up</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
 
         <!-- Track and set sidebar scroll position -->
@@ -120,9 +127,9 @@
                                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -171,51 +178,60 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="my-diy-bathroom-renovation"><a class="header" href="#my-diy-bathroom-renovation">My DIY Bathroom Renovation</a></h1>
-<p>In January 2022, I finally tackled a project that had been on my mind for awhile: redoing our master bathroom.  It took me six months, and was more involved than I expected (how many DIY'ers have said that before 🤔).  By the time it was done, I was really ready to do something else with my evenings and weekends.</p>
+<p>In January 2022, I began renovating our master bathroom.  It took me six months and was more involved than I expected (how many DIY'ers have said that before? 🤔).</p>
+<p>By the time it was done, I was ready to do something else with my evenings and weekends.</p>
 <!--more-->
-<p>With all that said, it turned out GREAT.  I couldn't be more pleased with the results.  It's so much more functional, efficient, safe, easy to clean.  I love its peace-inducing aesthetics.</p>
+<p>That said, it turned out really well.  It's much warmer, more functional, efficient, safe, easy to clean.  I love the peaceful aesthetics.</p>
 <p><img src="images/IMG_4740.jpg" alt="" /></p>
-<p>During those six months, I did design, demolition, plumbing, electrical, carpentry, drywall, waterproofing, tiling, painting, insulation, window replacement.  I am fortunate to have friends in the trades who guided me through the electrical and plumbing bits especially.  My brother loaned me his tile saw.  I am also fortunate that Lisle supports DYI'ers by allowing them to act as their own contractors for plumbing and electrical (Downers Grove, for instance, does not allow that).</p>
+<p>The renovation required me to wear these hats: design, demolition, plumbing, electrical, carpentry, drywall, waterproofing, tiling, painting, insulation, window replacement.  Friends in the trades guided me, especially with the electrical and plumbing bits.  My brother loaned me his tile saw.  I am fortunate that Lisle supports DYI'ers by allowing them to act as their own contractors for plumbing and electrical (Downers Grove, for instance, does not allow that).</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="inspiration"><a class="header" href="#inspiration">Inspiration</a></h1>
-<p>During a 2021 Brauer reunion in Southern Illinos at the end of August, a relative who came to stay at Mom's house broke off the rain-head showerhead while trying to adjust it.  When I took a look and told Mom it needed some &quot;deep fixing&quot; (the plastic pipe was broken off behind the shower), she asked Why not just redo the whole shower?  In mid-September, I did the demolition, including taking out the fiberglass tub/shower.</p>
-<p>Mom had a local handyman put in a walk-in shower with custom tile, getting it done shortly before Thanksgiving.  Parts of it were inspired by Uncle Rich's DIY shower at his house by Lake Petersburg.  When I saw Mom's shower, I came away thinking that (a) it looked pretty good, and b) I was sure I could do better.</p>
-<p>In early October, I went ahead and put in a dedicated water heater (more on that later), as a prelude to the bathroom upgrade.</p>
-<p><img src="images/2021-09-15-moms-bathroom-demo-IMG_3025.jpg" alt="" title="Sep 15, 2021" /> <br><span class="caption">Demo'ing Mom's downstairs bathroom, Septembrer 2021</span></p>
-<p>When we stayed over at Jim and Megan's house during the holidays, I took a look at their custom bathroom (which they also did themselves).  I loved the Roman-style textured light tile.  I resolved to use something similar.  I also liked the bench, the wide grout spacing, and the large tiles.
+<p>During a 2021 Brauer reunion in Southern Illinos at the end of August, a relative staying at Mom's house tried to adjust the rain-head showerhead, and it broke off (not entirely her fault; it was piece of cheap plastic).  I took a look and told Mom it needed some deep fixing; the plastic pipe was broken off behind the shower. She said Why not just redo the whole shower?</p>
+<p>In mid-September, I took out the fiberglass tub and shower.  Mom had a local handyman put in a walk-in shower with custom tile; he got it done shortly before Thanksgiving.  Parts of it were inspired by Uncle Rich's DIY shower at his house by Lake Petersburg.  I saw Mom's shower, and went home thinking (a) it looked pretty good, and b) I could do better.</p>
+<p><img src="images/2021-09-15-moms-bathroom-demo-IMG_3025.jpg" alt="" title="Sep 15, 2021" /> <br><span class="caption">Demo'ing Mom's downstairs bathroom, September 2021</span></p>
+<p>In early October, I put in a dedicated water heater for our master bath (more on that later), as a prelude to the upgrade.</p>
+<p>When Grace and I stayed over at my sister's house during the holidays, I took a look at their bathroom they had done themselves.  I loved the Roman-style textured light tile, and decided to use something similar.  I also liked the bench, the wide grout spacing, and the use of large tiles.
 <img src="images/IMG_5343.jpg" alt="" title="Fall 2021" /> <br><span class="caption">Jim and Megan's bathroom</span></p>
-<p>I eventually found the travertine-style &quot;Travisano Trevi&quot; tile at Home Depot.  In turn, that pattern guided me to further Roman-style choices expressing a simple, uncluttered, calm theme.  That pattern came in six-inch and twelve-inch sizes.</p>
+<p>I eventually found a travertine-style tile at Home Depot, "Travisano Trevi". That pattern guided me to further Roman-themed choices expressing a simple, uncluttered, calm atmosphere.  That pattern came in six-inch and twelve-inch sizes.</p>
 <p><img src="images/JDQV1899.jpg" alt="" title="Fall 2021" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="design-considerations"><a class="header" href="#design-considerations">Design Considerations</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="design"><a class="header" href="#design">Design</a></h1>
 <h2 id="utility"><a class="header" href="#utility">Utility</a></h2>
-<p>Below is the old bathroom. We didn't use the jacuzzi any more; it took up a lot of space.  The old shower was difficult to keep clean; the glass doors required frequent washing. The caulk around the tub mildewed and needed replacing periodically--an arduous, time-consuming and messy job.  The openings in the unused jacuzzi accumulated black mold.</p>
-<p>The ceiling box above the tub--presumably for keeping steam inside the shower space--made the already small bathroom even smaller.</p>
-<p>And the vanity and cabinet were dated and over-large.</p>
+<p>Here is the old bathroom.</p>
 <p><img src="images/IMG_3836.jpg" alt="" title="Jan 9" /> <br><span class="caption">The bathroom before starting renovation</span></p>
+<p>We weren't using the jacuzzi any more.  The openings accumulated black mold.</p>
+<p>The old tub and shower was difficult to keep clean. The glass doors required frequent cleaning, and the caulk around the tub mildewed and needed to be replaced occasionally--an arduous, time-consuming and messy job.</p>
+<p>The bathroom was <strong>cold</strong>.  Being converted from a garage, it was at the far end of the house from the furnace.  The window was single-pane uninsulated glass, which made it worse.</p>
+<h2 id="use-of-space"><a class="header" href="#use-of-space">Use of space</a></h2>
+<p>The jacuzzi tub took up a lot of space.</p>
+<p>The ceiling box above the tub--presumably for concentrating steam inside the shower space--made an already small room even smaller.</p>
+<p>The vanity and cabinet were too large for the space.</p>
 <h2 id="safety"><a class="header" href="#safety">Safety</a></h2>
-<p>The inside of the tub was slippery and slanted.  In addition, the glass door track was sharp, making it dangerous to get in and out of the shower.</p>
-<h2 id="design-wish-list"><a class="header" href="#design-wish-list">Design Wish List</a></h2>
+<p>The inside of the tub was slippery and slanted.  The glass door track was sharp, making it dangerous to get in and out of the shower.</p>
+<p>The window lock didn't work.  The counterbalance was broken, so that the window didn't stay up on its own.</p>
+<h2 id="decor"><a class="header" href="#decor">Decor</a></h2>
+<p>The vanity was dated.  The cabinet was likely a repurposed kitchen cabinet.  The linoleum floor was old and peeling.</p>
+<h2 id="wish-list"><a class="header" href="#wish-list">Wish List</a></h2>
 <h3 id="walk-in-shower-wheelchair-accessible"><a class="header" href="#walk-in-shower-wheelchair-accessible">Walk-in shower, wheelchair-accessible</a></h3>
-<p>As we get older, a walk-in shower makes for one one less thing to trip over.  Grace requested a vent aperture at the top, to allow steam to escape more easily.  I made the walk-in shower entrance 30 inches wide, with no threshold.</p>
+<p>A walk-in shower means less to trip over--important as we get older!  Grace wanted a vent at the top, to allow steam to escape more easily.  For wheelchair access, the shower entrance needed to be 30 inches wide.  I wanted to avoid thresholds if possible.  They tend to need fixing, accumulate dirt, and make a tripping hazard.</p>
 <h3 id="roman-travertine-style-tile"><a class="header" href="#roman-travertine-style-tile">Roman travertine-style tile</a></h3>
-<p>As I mentioned, I went with the Travisano Trevi tile by Marazzi, inspired by Megan's walk-in shower, and 3/16&quot; spacing.  The pattern and spacing worked well, and was forgiving to a newbie tile guy.</p>
+<p>Travisano Trevi tile by Marazzi inspired by Megan's walk-in shower, with 3/16" spacing.  The pattern and spacing work well together, and 3/16" is forgiving to a newbie tile guy.</p>
 <h3 id="heated-tile-floor"><a class="header" href="#heated-tile-floor">Heated tile floor</a></h3>
-<p>My Uncle Bob put a heated floor into his basement when building his house outside Petersburg, and it was so nice to walk on!  I wanted to change the character of the bathroom; instead of being the cold room at the end of the house as a result of being a converted garage, and far from the furnace, I wanted to insulate it and heat it so that it would be literally warm and inviting.</p>
+<p>I wanted to change the character of the bathroom to be warm and inviting.  My Uncle Bob had put in a heated basement floor when building his house outside Petersburg; it was so nice to walk on!  A heated floor would go a long way toward making it a desirable place.</p>
 <h3 id="conserving-water"><a class="header" href="#conserving-water">Conserving water</a></h3>
-<p>The flow control and temperature control on the Delta shower trim and valve, combined with a rain head showerhead, makes it easy to use only the water you need.  Additionally, the hand shower is usable as a bidet--something Grace liked when staying in London while visiting Lydia.</p>
+<p>A Delta shower valve and trim with flow control and temperature control, combined with a rain showerhead, makes it easy to use only the water you need.  Additionally, a hand shower would be usable as a bidet--something Grace liked when staying in London while visiting Lydia--and save even more water.</p>
 <h3 id="corner-bench"><a class="header" href="#corner-bench">Corner bench</a></h3>
-<p>Mom's corner bench in her new walk-in shower is useful; I made ours a little lower, and a little wider.</p>
+<p>Mom's corner bench in her new walk-in shower is useful. I wanted to make ours a little lower and a little wider.</p>
 <h3 id="a-calming-uncluttered-space"><a class="header" href="#a-calming-uncluttered-space">A calming, uncluttered space</a></h3>
-<p>The old bathroom had a rather busy, jarring set of patterns that did not go well together.  I wanted the redesign to exude a peaceful environment that was uncluttered but not stark.</p>
+<p>The old bathroom was a busy, jarring set of patterns that did not go well together.  I wanted a peaceful cohesive design, uncluttered but not stark.</p>
 <h3 id="new-window"><a class="header" href="#new-window">New Window</a></h3>
-<p>The old window was single-pane, drafty, with a broken lock, and didn't stay up on its own.  The new window is well-insulated, can be easily cleaned from inside, and has double panes allowing it to be opened at the bottom or top.</p>
+<p>The new window would be well-insulated, cleanable from inside, with panes allowing it to be opened at the bottom or top.</p>
 <h3 id="lighting"><a class="header" href="#lighting">Lighting</a></h3>
-<p>A light in the shower itself helps make it welcoming.</p>
+<p>A light in the shower itself helps make it welcoming.  With a narrower frame, a new window would also let in more light.</p>
 <h3 id="a-big-sink-with-plenty-of-depth"><a class="header" href="#a-big-sink-with-plenty-of-depth">A big sink with plenty of depth</a></h3>
-<p>Sometimes I like to wash up in the sink.  The small sink did not lend itself to such practices.</p>
+<p>Sometimes I like to use the sink to wash my hair.  The small sink did not lend itself to such practices.</p>
 <h2 id="challenges"><a class="header" href="#challenges">Challenges</a></h2>
 <ul>
 <li>Getting the shower drain right.  Lots of engineering goes into a well-installed drain!</li>
-<li>Building and anchoring the shower wall (since it wouldn't sit directly under a rafter).</li>
+<li>Building and anchoring the shower wall, since it wouldn't sit directly under a rafter.</li>
 <li>Waterproofing the shower.  Standard drywall is not rated for shower walls, and waterproofing requires extra work and material.</li>
 <li>Embedding the heating elements in the floor, and wiring them to the thermostat.</li>
 <li>Wiring the shower light from the attic.</li>
@@ -224,7 +240,7 @@
 </ul>
 <img src="images/IMG_3967.jpg">
 <div style="break-before: page; page-break-before: always;"></div><h1 id="dedicated-water-heater"><a class="header" href="#dedicated-water-heater">Dedicated Water Heater</a></h1>
-<p>As the first step in upgrading the bathroom, I put a dedicated 20-gallon water heater in the crawl space just below.</p>
+<p>As the first step in upgrading the bathroom, I put a dedicated 20-gallon water heater in the crawl space just below and next to the room.</p>
 <p><img src="images/IMG_3094.jpg" alt="" title="9 Oct 2021" /></p>
 <style>
 .clearfix::after {
@@ -238,7 +254,7 @@
 Along the way, I refactored a lot of piping. I removed a 3/4" hot water line running all the way across the house, which had been added when the attached garage at the north end of the house was converted to a master bedroom and bathroom.  It was taking a looong time to get hot water to the bathroom, and wasted lots of hot water in the process.
 <p>I also removed a bunch of unused pipe that had been left in place from previous projects. --&gt;</p>
 </div>
-<p>It was an interesting exercise re-attaching the dishwasher line and the humidifier line. I didn't realize at first that the humidier was being fed <em>hot</em> water, although it makes sense; hot water evaporates more quickly.  I discovered SharkBite fittings, expensive but awesome, especially where (a) one can't easily sweat a copper joint without setting something on fire, or (b) one might need to disconnect the pipe later for whatever reason. </p>
+<p>It was an interesting exercise re-attaching the dishwasher line and the humidifier line. I didn't realize at first that the humidier was being fed <em>hot</em> water, although it makes sense; hot water evaporates more quickly, which is more efficient.  I discovered SharkBite fittings, expensive but awesome, especially where (a) one can't easily sweat a copper joint without setting something on fire, or (b) one might need to disconnect the pipe later for whatever reason.</p>
 <p>In the latter case, a SharkBite fitting on the water heater's hot water line came in handy when I discovered the humidifier requirement; I popped off the fitting, added a tee, and popped it back onto the bottom of the tee:</p>
 <div class="img-row"> 
  <div class="img-gallery">
@@ -251,7 +267,7 @@ Along the way, I refactored a lot of piping. I removed a 3/4" hot water line run
  </div>
 </div>
 <p>Note that the tee isn't only for the humidier.  The humidifier actually taps into the line via a saddle valve.  The additional plastic quick-coupling fitting (not Shark-Bite) goes to the dishwasher.</p>
-<p>Feeding the humidifier from a nearby hot water source saves energy, and the humidifier is more effective since it's getting hotter water.  Previously, by the time the trickle of water reached the humidifier from the far-off main water heater, it was merely warm.</p>
+<p>Feeding the humidifier from a nearby hot water source saves energy, and the humidifier is more effective since it's getting hotter water.  Previously, by the time the trickle of water reached the humidifier from the far-off main water heater, it was merely warm at best.</p>
 <p>While running power to the water heater, I also fixed an ancient wiring mess to the oven.</p>
 <div class="img-row"> 
   <div class="img-gallery">
@@ -271,11 +287,12 @@ Along the way, I refactored a lot of piping. I removed a 3/4" hot water line run
 <p><img src="images/IMG_3862.jpg" alt="" title="Jan 9" /></p>
 <p><img src="images/IMG_3863.jpg" alt="" title="Jan 9" /></p>
 <p><img src="images/IMG_3864.jpg" alt="" title="Jan 9" /></p>
-<p>I had already bought the new sink.  I put it in while taking out the linoleum floor.</p>
+<p>I had already bought the new sink.  I put it in temporarily while taking out the linoleum floor.</p>
 <p><img src="images/IMG_3873.jpg" alt="" title="Jan 9" /></p>
 <p><img src="images/IMG_3905.jpg" alt="" /></p>
 <p><img src="images/IMG_3908.jpg" alt="" /></p>
 <p><img src="images/IMG_3910.jpg" alt="" /></p>
+<p>Taking out the window, 'way later on.  Note the new window leaning against the wall, inside.</p>
 <p><img src="images/IMG_4415.jpg" alt="" /></p>
 <p><img src="images/IMG_4416.jpg" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="heated-floor"><a class="header" href="#heated-floor">Heated Floor</a></h1>
@@ -328,7 +345,7 @@ Along the way, I refactored a lot of piping. I removed a 3/4" hot water line run
 <img width="49%" src="images/IMG_4737.jpg">
 <div style="break-before: page; page-break-before: always;"></div><h1 id="walls-and-insulation"><a class="header" href="#walls-and-insulation">Walls and Insulation</a></h1>
 <p>As I went along, it became clear that much of the insulation would need replacing.</p>
-<p>I initially brought home some MoldTough green drywall, but then discovered that it isn't rated for showers.  So I took back the 5 4x8 sheets, and went with 0.42&quot; &quot;HardieBoard&quot; cement backer board, which comes in 3x5' (due to its weight, no doubt).</p>
+<p>I initially brought home some MoldTough green drywall, but then discovered that it isn't rated for showers.  So I took back the 5 4x8 sheets, and went with 0.42" "HardieBoard" cement backer board, which comes in 3x5' (due to its weight, no doubt).</p>
 <img width="32%" src="images/IMG_3916.jpg">
 <img width="32%" src="images/IMG_3917.jpg">
 <img width="32%" src="images/IMG_3933.jpg">
@@ -506,7 +523,7 @@ Along the way, I refactored a lot of piping. I removed a 3/4" hot water line run
 <img width="30%" src="images/IMG_4236.jpg" >
 <img width="30%" src="images/IMG_4239.jpg" >
 <img width="30%" src="images/IMG_4240.jpg" >
-<p>5&quot; waterproofing seam tape around the shower drain and all corners.  Triple-coat RedGard on the shower floor and 18&quot; up the wall.</p>
+<p>5" waterproofing seam tape around the shower drain and all corners.  Triple-coat RedGard on the shower floor and 18" up the wall.</p>
 <img width="30%" src="images/IMG_4241.jpg" >
 <img width="30%" src="images/IMG_4242.jpg" >
 <img width="30%" src="images/IMG_4246.jpg" >
@@ -523,7 +540,7 @@ Along the way, I refactored a lot of piping. I removed a 3/4" hot water line run
 <img width="30%" src="images/IMG_4254.jpg" >
 <img width="30%" src="images/IMG_4257.jpg" >
 <img width="30%" src="images/IMG_4259.jpg" >
-<p>Fastening the flange down over the waterproofing.  Note the weep channels and weep holes in the flange, to allow water to escape into the drain. </p>
+<p>Fastening the flange down over the waterproofing.  Note the weep channels and weep holes in the flange, to allow water to escape into the drain.</p>
 <p>Floating the final slope into the edge of the drain grate.  The grate is aligned at a 45 degree angle, parallel with the edge of the shower bench.</p>
 <p>Note the small gravel (courtesy of Lydia's fish tank supplies😃) embedded in the mortar. Under the lip of the grate, it is loose around the flange, preventing the weep holes from getting plugged with mortar. If any water were to get beneath the tile (the grout is not 100% waterproof), it still has a route to the drain and not the floor.</p>
 <img width="30%" src="images/IMG_4250.jpg" >
@@ -565,7 +582,7 @@ Along the way, I refactored a lot of piping. I removed a 3/4" hot water line run
 <img width="30%" src="images/IMG_4441.jpg" >
 <img width="30%" src="images/IMG_4444.jpg" >
 <p>I started from the middle of the bench, so that it would align with the floor seams.  On the opposite wall, I started so that the steam vent, the cubby, the floor, and the corner would come out right.</p>
-<p>Now I needed to make everything come together.  As I went, I realized I had a 3/16&quot; height discrepancy that would have to be resolved before the courses met.  This was due to my uncertainty about exactly how the seam width would work out.</p>
+<p>Now I needed to make everything come together.  As I went, I realized I had a 3/16" height discrepancy that would have to be resolved before the courses met.  This was due to my uncertainty about exactly how the seam width would work out.</p>
 <img width="30%" src="images/IMG_4453.jpg" >
 <img width="30%" src="images/IMG_4454.jpg" >
 <img width="30%" src="images/IMG_4455.jpg" >
@@ -621,7 +638,7 @@ Along the way, I refactored a lot of piping. I removed a 3/4" hot water line run
 <p>Finished tiling 31 May, nearly two months to the day after I started.  433 full or partial tiles laid!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="grouting"><a class="header" href="#grouting">Grouting</a></h1>
 <p><img src="images/IMG_4565.jpg" alt="" /></p>
-<p>Prototyping a dark &quot;Coffee Bean&quot; grout...Nope.</p>
+<p>Prototyping a dark "Coffee Bean" grout...Nope.</p>
 <p><img src="images/IMG_4571.jpg" alt="" /></p>
 <p>The light colored is looking much better. Polyblend Plus non-sanded, #386 Oyster Gray.  (Pay no attention to reddish hue, it's the RedGard all over the walls and ceiling).</p>
 <p><img src="images/IMG_4648.jpg" alt="" /></p>
@@ -649,20 +666,39 @@ Along the way, I refactored a lot of piping. I removed a 3/4" hot water line run
 <img width="32%" src="images/IMG_4663.jpg">
 <img width="32%" src="images/IMG_4664.jpg">
 <img width="32%" src="images/IMG_4681.jpg">
-<div style="break-before: page; page-break-before: always;"></div><h1 id="painting"><a class="header" href="#painting">Painting</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="painting-and-trim"><a class="header" href="#painting-and-trim">Painting and Trim</a></h1>
+<p>My friend Bob, with decades of construction experience, shared valuable insight.</p>
+<blockquote>
+<p>Do your best, and caulk the rest</p>
+</blockquote>
+<p>Also...</p>
+<blockquote>
+<p>Caulk and paint make a carpenter what he aint</p>
+</blockquote>
+<p>He also taught me the three phases of construction project management:</p>
+<ol>
+<li>The design phase</li>
+<li>The build phase</li>
+<li>The lawsuit phase</li>
+</ol>
 <img width="32%" src="images/IMG_4681.jpg">
 <img width="32%" src="images/IMG_4736.jpg">
 <img width="32%" src="images/IMG_4737.jpg">
 <img width="32%" src="images/IMG_4738.jpg">
 <img width="32%" src="images/IMG_4739.jpg">
-<div style="break-before: page; page-break-before: always;"></div><h1 id="wood-trim"><a class="header" href="#wood-trim">Wood Trim</a></h1>
-<img width="32%" src="images/IMG_4768.jpg">
-<img width="32%" src="images/IMG_4769.jpg">
+<p>The prepainted real wood is more expensive, but I think it looks better.</p>
 <img width="32%" src="images/IMG_4776.jpg">
-<img width="32%" src="images/IMG_4779.jpg">
 <img width="32%" src="images/IMG_4780.jpg">
+<img width="32%" src="images/IMG_4779.jpg">
+Getting the trim corners "good enough" required a few trips back and forth to the chop saw.
+<p/>
 <img width="32%" src="images/IMG_4783.jpg">
-<img width="32%" src="images/IMG_4786.jpg">
+<!-- <img width="32%" src="images/IMG_4768.jpg"> -->
+<img width="32%" src="images/IMG_7654.jpg">
+<img width="32%" src="images/IMG_4769.jpg">
+<p>Painting the bathroom side of the slot door completed the atmosphere, setting the room off from the rest of the house and creating a light, calm and uncluttered space.</p>
+<img width="32%" src="images/IMG_7656.jpg">
+<img width="32%" src="images/IMG_7657.jpg">
 <div style="break-before: page; page-break-before: always;"></div><h1 id="wrap-up"><a class="header" href="#wrap-up">Wrap-Up</a></h1>
 <p><img src="images/IMG_4795.jpg" alt="" /></p>
 
