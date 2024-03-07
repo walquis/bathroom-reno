@@ -1,8 +1,15 @@
 # Tiling - 1 April to 31 May
+I had very little experience laying tile prior to this project.  My brother Aric loaned me his tile wetsaw, and I watched a lot of videos.
+
+I worked hard to think through how to integrate the dimensions and placement of cubbyhole, drain, fixtures, tiles, etc., aligning everything horizontally and vertically to avoid odd intersections.
+
+Although grueling and tedious--it took two months not including the grouting--I am very pleased with how it turned out.
+
+<img src="images/IMG_4740.jpg">
 
 ![](images/IMG_4255.jpg)
 
-A trial layout, to see how the diagonal pattern would intersect with the drain and walls.  The broken pieces to the left are my attempt to cut a drain-sized square from the middle of a six-inch tile.  It became abundantly clear that approach was never going to work!
+A trial layout, to see how the diagonal pattern would intersect with the drain and walls.  The broken pieces to the left are casualties of my attempts to cut a drain-sized square from the middle of a six-inch tile.  It became clear that approach was never going to work!
 
 <img width="30%" src="images/IMG_4260.jpg">
 
@@ -37,7 +44,7 @@ So many tiles...
 
 ### Laying Wall Tile - 30 April to 31 May
 
-One tricky bit about the walls was positioning the tile seams horizontally and vertically to avoid awkward intersections with fixtures, floors, or corners.  I didn't want to deal with cutting and placing slivers of tile, which wouldn't look good nor last well.
+I spent a lot of time thinking through how to align the tile seams horizontally and vertically to avoid awkward intersections with fixtures, floors, or corners.  Gaps and odd pieces wouldn't look good, wouldn't last well, and wouldn't be easy to keep clean.
 
 Also, I needed to keep everything aligned all the way around the shower.
 

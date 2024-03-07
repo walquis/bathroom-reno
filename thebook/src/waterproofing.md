@@ -21,7 +21,7 @@ Seam tape around the shower cubby corners.
 
 
 ### Getting the Drain Waterproofing Right
-Very important to seal the floor around the drain, all the way over the edge of the drain base, so that water can only go down the drain, even if it gets thru the grout and underneath the tile.
+It's crucial to seal the floor around the drain, all the way over the edge of the drain base, so that water can only go down the drain, even if it gets through the grout and under the tile.  There is no way it can get to the subfloor.  If that were to happen, I would have a shower that "failed".
 
 <img width="30%" src="images/IMG_4248.jpg" >
 
@@ -35,12 +35,12 @@ Fastening the flange down over the waterproofing.  Note the weep channels and we
 
 Floating the final slope into the edge of the drain grate.  The grate is aligned at a 45 degree angle, parallel with the edge of the shower bench.
 
-Note the small gravel (courtesy of Lydia's fish tank supplies😃) embedded in the mortar. Under the lip of the grate, it is loose around the flange, preventing the weep holes from getting plugged with mortar. If any water were to get beneath the tile (the grout is not 100% waterproof), it still has a route to the drain and not the floor.
+Note the small gravel (courtesy of Lydia's fish tank supplies😃) embedded in the mortar. Under the lip of the grate, it is loose around the flange, preventing the weep holes from getting plugged with mortar. If any water were to get beneath the tile (the grout is not 100% waterproof), it would still have a route only to the drain and not to the wood subflooring.
 
 <img width="30%" src="images/IMG_4250.jpg" >
 <img width="30%" src="images/IMG_4251.jpg" >
 <img width="30%" src="images/IMG_4252.jpg" >
 
-Didn't need to RedGard the whole thing, but I had 3 gallons, and didn't want to waste it.  Although if I'd known how much trouble it would be to get a smooth surface to paint on top of RedGard, I probably would have thrown the extra RedGard away!
+I didn't need to RedGard the whole thing, but I had three gallons and didn't want to waste it.  If I'd known how much trouble it would be to get a smooth surface to paint on top of RedGard, I would have thrown the extra RedGard away 🙄.
 
-Oh well.  At least the walls have absolutely no chance of steam getting through.
+Oh well.  At least the walls and ceiling have absolutely no chance of steam getting through.
