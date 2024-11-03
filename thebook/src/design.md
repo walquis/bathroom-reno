@@ -1,62 +1,47 @@
 # Design
 
-## Utility
+![](images/IMG_3836.jpg "Jan 9") <br><span class="caption">The bathroom before starting renovation on 9 Jan 2022</span>
 
-Here is the old bathroom.
+Much could be done to improve the use of space, safety, decor, and overall utility.
 
-![](images/IMG_3836.jpg "Jan 9") <br><span class="caption">The bathroom before starting renovation</span>
+For starters, the tub and shower...  We weren't using the jacuzzi any more, and the tub took up a lot of space.  The tub and shower were difficult to keep clean; the jacuzzi jet openings accumulated black mold, the glass doors required frequent cleaning, and the caulk around the tub needed frequent replacement--an arduous, time-consuming and messy job.  The inside of the tub was dangerously slanted and slippery.  The glass door track was sharp, also making it dangerous to get in and out of the shower.
 
-We weren't using the jacuzzi any more.  The openings accumulated black mold.
+As part of a converted garage, the bathroom was **COLD**, located at the far end of the house from the furnace.
 
-The old tub and shower was difficult to keep clean. The glass doors required frequent cleaning, and the caulk around the tub mildewed and needed to be replaced occasionally--an arduous, time-consuming and messy job. 
+The ceiling box above the tub, for keeping steam in the shower, made an already small room even smaller.  We didn't take steam showers anyway.
 
-The bathroom was **cold**.  Being converted from a garage, it was at the far end of the house from the furnace.  The window was single-pane uninsulated glass, which made it worse.
+The vanity and cabinet were too large for the space.  The vanity was dated, the repurposed kitchen cabinet wasn't a fit, the linoleum floor was old and peeling, and the wall tile decorations were frumpy.
 
-## Use of space
-
-The jacuzzi tub took up a lot of space. 
-
-The ceiling box above the tub--presumably for concentrating steam inside the shower space--made an already small room even smaller.
-
-The vanity and cabinet were too large for the space.
-
-## Safety
-The inside of the tub was slippery and slanted.  The glass door track was sharp, making it dangerous to get in and out of the shower.
-
-The window lock didn't work.  The counterbalance was broken, so that the window didn't stay up on its own.
-
-## Decor
-
-The vanity was dated.  The cabinet was likely a repurposed kitchen cabinet.  The linoleum floor was old and peeling.
+The window was single-pane uninsulated glass.  The window lock was broken.  The counterbalance was also broken, so that the window didn't stay up on its own.
 
 ## Wish List
 
 ### Walk-in shower, wheelchair-accessible
-A walk-in shower means less to trip over--important as we get older!  Grace wanted a vent at the top, to allow steam to escape more easily.  For wheelchair access, the shower entrance needed to be 30 inches wide.  I wanted to avoid thresholds if possible.  They tend to need fixing, accumulate dirt, and make a tripping hazard.
+We wanted the shower entrance to be 30 inches wide, for wheelchair access.  I wanted to avoid thresholds if possible.  They tend to need fixing, accumulate dirt, and make a tripping hazard.  A walk-in shower with no threshold means less to trip over--important as we get older!  Grace also wanted a vent at the top for steam to escape.
 
 ### Roman travertine-style tile
-Travisano Trevi tile by Marazzi inspired by Megan's walk-in shower, with 3/16" spacing.  The pattern and spacing work well together, and 3/16" is forgiving to a newbie tile guy.
+The tile in my sister's walk-in shower inspired the choice of Travisano Trevi tile.  The pattern and spacing work well together, and 3/16" spacing is very forgiving to a newbie DIY tile guy.
 
 ### Heated tile floor
-I wanted to change the character of the bathroom to be warm and inviting.  My Uncle Bob had put in a heated basement floor when building his house outside Petersburg; it was so nice to walk on!  A heated floor would go a long way toward making it a desirable place.
+I wanted the character of the bathroom to be warm and inviting.  I loved the heated basement floor my Uncle Bob put in when building his house outside Petersburg; it was so nice to walk on!  A heated floor goes a long way toward making it a desirable place.
 
-### Conserving water
-A Delta shower valve and trim with flow control and temperature control, combined with a rain showerhead, makes it easy to use only the water you need.  Additionally, a hand shower would be usable as a bidet--something Grace liked when staying in London while visiting Lydia--and save even more water.
+### Water conservation
+A Delta shower valve and trim with flow control and temperature control, combined with a rain showerhead, lets you use only the water you need.  Additionally, a hand shower is usable as a bidet, and saves even more water.  Finally, a dedicated water heater close to the bathroom minimizes waste of hot water coming all the way across the house.
 
-### Corner bench
-Mom's corner bench in her new walk-in shower is useful. I wanted to make ours a little lower and a little wider.
+### Corner shower bench
+I liked Mom's corner bench in her new walk-in shower. I added one too, but a little lower and wider.
 
 ### A calming, uncluttered space
-The old bathroom was a busy, jarring set of patterns that did not go well together.  I wanted a peaceful cohesive design, uncluttered but not stark.
+The old bathroom's busy, jarring set of patterns did not go well together.  My design goal was a peaceful cohesive atmosphere, uncluttered but not stark.
 
-### New Window
-The new window would be well-insulated, cleanable from inside, with panes allowing it to be opened at the bottom or top.
+### Energy-efficient window
+The window would be well-insulated, cleanable from the inside, and [double-hung](https://www.merriam-webster.com/dictionary/double-hung%20window).  With less frame and more glass, a new window would also let in more light.
 
-### Lighting
-A light in the shower itself helps make it welcoming.  With a narrower frame, a new window would also let in more light.
+### Better lighting
+A light in the shower itself helps make it welcoming.
 
 ### A big sink with plenty of depth
-Sometimes I like to use the sink to wash my hair.  The small sink did not lend itself to such practices.
+Sometimes I use the sink to wash my hair.  The existing small sink did not lend itself to such practices.
 
 ## Challenges
 - Getting the shower drain right.  Lots of engineering goes into a well-installed drain!
@@ -67,4 +52,5 @@ Sometimes I like to use the sink to wash my hair.  The small sink did not lend i
 - Learning to tile and grout.
 - Learning to replace a window.
 
-<img src="images/IMG_3967.jpg">
+## Rough blueprint
+<img src="images/IMG_3967.jpg"><br><span class="caption">The electrical plan I turned in to the village for permitting</span>

@@ -25,7 +25,7 @@ I decided on ThermoSoft resistance heat pads, one in front of the toilet and sin
 <img width="49%" src="images/IMG_4191.jpg">
 <img width="49%" src="images/IMG_4193.jpg">
 
-<p>I initially installed the thermostat too close to the shower; it wouldn't have passed inspection.  I had to move it.</p>
+<p>I initially installed the thermostat too close to the shower.  The village inspector pointed out during the rough inspecction that it wouldn't have passed electrical inspection, so I had to move it.</p>
 <img width="49%" src="images/IMG_3882.jpg">
 <img width="49%" src="images/IMG_3887.jpg">
 
@@ -33,11 +33,13 @@ I decided on ThermoSoft resistance heat pads, one in front of the toilet and sin
 <img width="30%" src="images/IMG_3917.jpg">
 <img width="30%" src="images/IMG_3926.jpg">
 
-This was better. (It's where the timer box for the jacuzzi was.  Now I know why they put it way over there!)
+This is a better location, where the jacuzzi's pump timer was.  Now I know why they put it way over there!
 
 <img width="49%" src="images/IMG_3974.jpg">
 <img width="49%" src="images/IMG_4042.jpg">
+The black lines are the power, and the lines inside the clear tubing are the thermometers.  The thermostat only uses one sensor, but a spare sensor runs under the shower in case the other one fails.
+
 <img width="49%" src="images/IMG_4165.jpg">
 <img width="49%" src="images/IMG_4166.jpg">
-
+The instructions specify to put the power and sensor lines in separate conduit.
 
